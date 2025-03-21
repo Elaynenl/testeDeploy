@@ -19,7 +19,8 @@ app.use(express.json());
 app.use('/api/user', userRoutes);
 
 // Servir arquivos estáticos (Frontend)
-app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(express.static(path.join(__dirname, '../frontend/HTML')));
+app.use(express.static(path.join(__dirname, '../frontend/img')));
 
 // Inicializar servidor
 app.listen(PORT, () => {
