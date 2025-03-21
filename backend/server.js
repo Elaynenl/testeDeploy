@@ -23,6 +23,6 @@ app.use(express.static(path.join(__dirname, '../frontend/HTML')));
 app.use(express.static(path.join(__dirname, '../frontend/img')));
 
 // Inicializar servidor
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Servidor rodando na porta ${PORT}`);
+// });
