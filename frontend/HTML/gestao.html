@@ -108,7 +108,7 @@
                 return;
             }
             try {
-                const response = await axios.get("https://teste-deploy-henna.vercel.app/api/user/users", {
+                const response = await axios.get(`${API_BASE_URL}api/user/users`, {
                     headers: {
                         Authorization: `Bearer ${token}`  // Passando o token no cabeçalho
                     },
